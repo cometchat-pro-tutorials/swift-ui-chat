@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EB04B5105A21217BD8DBBD4 /* Pods_CometChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A251882778ED7697A58E830 /* Pods_CometChat.framework */; };
+		F5030C3623BF4CCF00B38075 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5030C3523BF4CCF00B38075 /* ChatService.swift */; };
+		F555789723AA0D68003448C9 /* ChatMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789623AA0D68003448C9 /* ChatMessageRow.swift */; };
+		F555789923AA10F2003448C9 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789823AA10F2003448C9 /* AvatarView.swift */; };
+		F555789B23AA1A48003448C9 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789A23AA1A48003448C9 /* ChatView.swift */; };
+		F555789D23AA1A60003448C9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789C23AA1A60003448C9 /* Message.swift */; };
+		F555789F23AA5A84003448C9 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789E23AA5A84003448C9 /* KeyboardObserver.swift */; };
+		F5C6586C2370301C0045161D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6586B2370301C0045161D /* AppDelegate.swift */; };
+		F5C6586E2370301C0045161D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6586D2370301C0045161D /* SceneDelegate.swift */; };
+		F5C65872237030200045161D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C65871237030200045161D /* Assets.xcassets */; };
+		F5C65875237030200045161D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C65874237030200045161D /* Preview Assets.xcassets */; };
+		F5C65878237030200045161D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C65876237030200045161D /* LaunchScreen.storyboard */; };
+		F5C658802370304B0045161D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6587F2370304B0045161D /* WelcomeView.swift */; };
+		F5C658822370358F0045161D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C658812370358F0045161D /* Colors.swift */; };
+		F5C6588623704E200045161D /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6588523704E200045161D /* ButtonViews.swift */; };
+		F5C65888237156520045161D /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C65887237156520045161D /* TextModifiers.swift */; };
+		F5C65891237163C50045161D /* ErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C65890237163C50045161D /* ErrorTextField.swift */; };
+		F5C658932371A2D90045161D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C658922371A2D90045161D /* LoginView.swift */; };
+		F5C91CFB23ACAAC800308066 /* ChatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C91CFA23ACAAC800308066 /* ChatTextField.swift */; };
+		F5C91CFD23ACB42300308066 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C91CFC23ACB42300308066 /* AppStore.swift */; };
+		F5D9982A239E2CF500B37C43 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D99829239E2CF500B37C43 /* ContactRow.swift */; };
+		F5D9982C239E2DDB00B37C43 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D9982B239E2DDB00B37C43 /* Contact.swift */; };
+		F5D9982E239E519C00B37C43 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D9982D239E519C00B37C43 /* ContactsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A251882778ED7697A58E830 /* Pods_CometChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CometChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC45BDADC24D2555ED621C0 /* Pods-CometChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometChat.debug.xcconfig"; path = "Target Support Files/Pods-CometChat/Pods-CometChat.debug.xcconfig"; sourceTree = "<group>"; };
+		CDDC19B3AEB61EF4850C2C57 /* Pods-CometChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometChat.release.xcconfig"; path = "Target Support Files/Pods-CometChat/Pods-CometChat.release.xcconfig"; sourceTree = "<group>"; };
+		F5030C3523BF4CCF00B38075 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		F555789623AA0D68003448C9 /* ChatMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRow.swift; sourceTree = "<group>"; };
+		F555789823AA10F2003448C9 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		F555789A23AA1A48003448C9 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F555789C23AA1A60003448C9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F555789E23AA5A84003448C9 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		F5C658682370301C0045161D /* CometChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CometChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C6586B2370301C0045161D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5C6586D2370301C0045161D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5C65871237030200045161D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5C65874237030200045161D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5C65877237030200045161D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5C65879237030200045161D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C6587F2370304B0045161D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F5C658812370358F0045161D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F5C6588523704E200045161D /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
+		F5C65887237156520045161D /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
+		F5C65890237163C50045161D /* ErrorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTextField.swift; sourceTree = "<group>"; };
+		F5C658922371A2D90045161D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F5C91CFA23ACAAC800308066 /* ChatTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTextField.swift; sourceTree = "<group>"; };
+		F5C91CFC23ACB42300308066 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		F5D99829239E2CF500B37C43 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		F5D9982B239E2DDB00B37C43 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F5D9982D239E519C00B37C43 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5C658652370301C0045161D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB04B5105A21217BD8DBBD4 /* Pods_CometChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A87A18B390DFD877A1AF4B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC45BDADC24D2555ED621C0 /* Pods-CometChat.debug.xcconfig */,
+				CDDC19B3AEB61EF4850C2C57 /* Pods-CometChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4E90220381EA958034E1808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A251882778ED7697A58E830 /* Pods_CometChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5C6585F2370301C0045161D = {
+			isa = PBXGroup;
+			children = (
+				F5C6586A2370301C0045161D /* CometChat */,
+				F5C658692370301C0045161D /* Products */,
+				0A87A18B390DFD877A1AF4B0 /* Pods */,
+				E4E90220381EA958034E1808 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5C658692370301C0045161D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5C658682370301C0045161D /* CometChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5C6586A2370301C0045161D /* CometChat */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6588E237158330045161D /* API */,
+				F5C65889237157510045161D /* Views */,
+				F5C6586B2370301C0045161D /* AppDelegate.swift */,
+				F5C6586D2370301C0045161D /* SceneDelegate.swift */,
+				F5C65871237030200045161D /* Assets.xcassets */,
+				F5C65876237030200045161D /* LaunchScreen.storyboard */,
+				F5C65879237030200045161D /* Info.plist */,
+				F5C65873237030200045161D /* Preview Content */,
+			);
+			path = CometChat;
+			sourceTree = "<group>";
+		};
+		F5C65873237030200045161D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5C65874237030200045161D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5C65889237157510045161D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6588D237157F40045161D /* Chat */,
+				F5C6588C237157EE0045161D /* Contacts */,
+				F5C6588B237157AE0045161D /* Signup */,
+				F5C6588A2371579E0045161D /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5C6588A2371579E0045161D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F5C658812370358F0045161D /* Colors.swift */,
+				F5C6588523704E200045161D /* ButtonViews.swift */,
+				F5C65887237156520045161D /* TextModifiers.swift */,
+				F5C65890237163C50045161D /* ErrorTextField.swift */,
+				F555789823AA10F2003448C9 /* AvatarView.swift */,
+				F555789E23AA5A84003448C9 /* KeyboardObserver.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F5C6588B237157AE0045161D /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6587F2370304B0045161D /* WelcomeView.swift */,
+				F5C658922371A2D90045161D /* LoginView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		F5C6588C237157EE0045161D /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F5D99829239E2CF500B37C43 /* ContactRow.swift */,
+				F5D9982D239E519C00B37C43 /* ContactsView.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F5C6588D237157F40045161D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F555789623AA0D68003448C9 /* ChatMessageRow.swift */,
+				F555789A23AA1A48003448C9 /* ChatView.swift */,
+				F5C91CFA23ACAAC800308066 /* ChatTextField.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F5C6588E237158330045161D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F5D9982B239E2DDB00B37C43 /* Contact.swift */,
+				F555789C23AA1A60003448C9 /* Message.swift */,
+				F5C91CFC23ACB42300308066 /* AppStore.swift */,
+				F5030C3523BF4CCF00B38075 /* ChatService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5C658672370301C0045161D /* CometChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C6587C237030200045161D /* Build configuration list for PBXNativeTarget "CometChat" */;
+			buildPhases = (
+				6822B2862D54D11433A5E164 /* [CP] Check Pods Manifest.lock */,
+				F5C658642370301C0045161D /* Sources */,
+				F5C658652370301C0045161D /* Frameworks */,
+				F5C658662370301C0045161D /* Resources */,
+				839A54EEC93DB9900C87BFD3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CometChat;
+			productName = CometChat;
+			productReference = F5C658682370301C0045161D /* CometChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5C658602370301C0045161D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = marinbenc;
+				TargetAttributes = {
+					F5C658672370301C0045161D = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = F5C658632370301C0045161D /* Build configuration list for PBXProject "CometChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5C6585F2370301C0045161D;
+			productRefGroup = F5C658692370301C0045161D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5C658672370301C0045161D /* CometChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5C658662370301C0045161D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C65878237030200045161D /* LaunchScreen.storyboard in Resources */,
+				F5C65875237030200045161D /* Preview Assets.xcassets in Resources */,
+				F5C65872237030200045161D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6822B2862D54D11433A5E164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CometChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		839A54EEC93DB9900C87BFD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CometChat/Pods-CometChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CometChat/Pods-CometChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CometChat/Pods-CometChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5C658642370301C0045161D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F555789723AA0D68003448C9 /* ChatMessageRow.swift in Sources */,
+				F5C6588623704E200045161D /* ButtonViews.swift in Sources */,
+				F5C65888237156520045161D /* TextModifiers.swift in Sources */,
+				F5C91CFD23ACB42300308066 /* AppStore.swift in Sources */,
+				F555789D23AA1A60003448C9 /* Message.swift in Sources */,
+				F5D9982C239E2DDB00B37C43 /* Contact.swift in Sources */,
+				F5030C3623BF4CCF00B38075 /* ChatService.swift in Sources */,
+				F555789B23AA1A48003448C9 /* ChatView.swift in Sources */,
+				F555789923AA10F2003448C9 /* AvatarView.swift in Sources */,
+				F5C65891237163C50045161D /* ErrorTextField.swift in Sources */,
+				F555789F23AA5A84003448C9 /* KeyboardObserver.swift in Sources */,
+				F5D9982A239E2CF500B37C43 /* ContactRow.swift in Sources */,
+				F5C6586C2370301C0045161D /* AppDelegate.swift in Sources */,
+				F5C658822370358F0045161D /* Colors.swift in Sources */,
+				F5C6586E2370301C0045161D /* SceneDelegate.swift in Sources */,
+				F5C658932371A2D90045161D /* LoginView.swift in Sources */,
+				F5D9982E239E519C00B37C43 /* ContactsView.swift in Sources */,
+				F5C91CFB23ACAAC800308066 /* ChatTextField.swift in Sources */,
+				F5C658802370304B0045161D /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5C65876237030200045161D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C65877237030200045161D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5C6587A237030200045161D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5C6587B237030200045161D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5C6587D237030200045161D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC45BDADC24D2555ED621C0 /* Pods-CometChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CometChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 55C8REN3Y5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CometChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marinbenc.CometChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5C6587E237030200045161D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDDC19B3AEB61EF4850C2C57 /* Pods-CometChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CometChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 55C8REN3Y5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CometChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marinbenc.CometChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5C658632370301C0045161D /* Build configuration list for PBXProject "CometChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C6587A237030200045161D /* Debug */,
+				F5C6587B237030200045161D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C6587C237030200045161D /* Build configuration list for PBXNativeTarget "CometChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C6587D237030200045161D /* Debug */,
+				F5C6587E237030200045161D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5C658602370301C0045161D /* Project object */;
+}

@@ -1,0 +1,4 @@
+target 'CometChat' do
+  use_frameworks!
+  pod 'CometChatPro', '~> 2.0.5'
+end
