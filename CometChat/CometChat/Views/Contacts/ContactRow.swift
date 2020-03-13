@@ -26,7 +26,7 @@ struct ContactRow: View {
 
       HStack {
         AvatarView(url: nil, isOnline: item.contact.isOnline)
-          .padding(.leading, 20)
+            .padding(.leading, 20)
                 
         VStack(alignment: .leading) {
           Text(item.contact.name)

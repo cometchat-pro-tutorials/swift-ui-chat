@@ -16,14 +16,15 @@ final class ChatService: ObservableObject {
   
   private enum Constants {
     #warning("Don't forget to set your API key and app ID here!")
-    static let cometChatAPIKey = "API_KEY"
-    static let cometChatAppID = "APP_ID"
+    static let cometChatAPIKey = "ENTER API KEY"
+    static let cometChatAppID = "ENTER APP ID"
+    static let cometChatRegionCode = "ENTER REGION CODE"
   }
   
   static func initialize() {
     let settings = AppSettings.AppSettingsBuilder()
       .subscribePresenceForAllUsers()
-      .setRegion(region: "eu")
+      .setRegion(region: Constants.cometChatRegionCode)
       .build()
     
     _ = CometChat(

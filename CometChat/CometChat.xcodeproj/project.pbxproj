@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EB04B5105A21217BD8DBBD4 /* Pods_CometChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A251882778ED7697A58E830 /* Pods_CometChat.framework */; };
 		F5030C3623BF4CCF00B38075 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5030C3523BF4CCF00B38075 /* ChatService.swift */; };
 		F555789723AA0D68003448C9 /* ChatMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789623AA0D68003448C9 /* ChatMessageRow.swift */; };
 		F555789923AA10F2003448C9 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555789823AA10F2003448C9 /* AvatarView.swift */; };
@@ -33,9 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A251882778ED7697A58E830 /* Pods_CometChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CometChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDC45BDADC24D2555ED621C0 /* Pods-CometChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometChat.debug.xcconfig"; path = "Target Support Files/Pods-CometChat/Pods-CometChat.debug.xcconfig"; sourceTree = "<group>"; };
-		CDDC19B3AEB61EF4850C2C57 /* Pods-CometChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometChat.release.xcconfig"; path = "Target Support Files/Pods-CometChat/Pods-CometChat.release.xcconfig"; sourceTree = "<group>"; };
 		F5030C3523BF4CCF00B38075 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		F555789623AA0D68003448C9 /* ChatMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRow.swift; sourceTree = "<group>"; };
 		F555789823AA10F2003448C9 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -67,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB04B5105A21217BD8DBBD4 /* Pods_CometChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,18 +72,8 @@
 		0A87A18B390DFD877A1AF4B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDC45BDADC24D2555ED621C0 /* Pods-CometChat.debug.xcconfig */,
-				CDDC19B3AEB61EF4850C2C57 /* Pods-CometChat.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E4E90220381EA958034E1808 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A251882778ED7697A58E830 /* Pods_CometChat.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F5C6585F2370301C0045161D = {
@@ -97,7 +82,6 @@
 				F5C6586A2370301C0045161D /* CometChat */,
 				F5C658692370301C0045161D /* Products */,
 				0A87A18B390DFD877A1AF4B0 /* Pods */,
-				E4E90220381EA958034E1808 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,11 +186,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5C6587C237030200045161D /* Build configuration list for PBXNativeTarget "CometChat" */;
 			buildPhases = (
-				6822B2862D54D11433A5E164 /* [CP] Check Pods Manifest.lock */,
 				F5C658642370301C0045161D /* Sources */,
 				F5C658652370301C0045161D /* Frameworks */,
 				F5C658662370301C0045161D /* Resources */,
-				839A54EEC93DB9900C87BFD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,48 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6822B2862D54D11433A5E164 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CometChat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		839A54EEC93DB9900C87BFD3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CometChat/Pods-CometChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CometChat/Pods-CometChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CometChat/Pods-CometChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5C658642370301C0045161D /* Sources */ = {
@@ -462,12 +402,11 @@
 		};
 		F5C6587D237030200045161D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDC45BDADC24D2555ED621C0 /* Pods-CometChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CometChat/Preview Content\"";
-				DEVELOPMENT_TEAM = 55C8REN3Y5;
+				DEVELOPMENT_TEAM = K456T8RD7Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CometChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,12 +422,11 @@
 		};
 		F5C6587E237030200045161D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDDC19B3AEB61EF4850C2C57 /* Pods-CometChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CometChat/Preview Content\"";
-				DEVELOPMENT_TEAM = 55C8REN3Y5;
+				DEVELOPMENT_TEAM = K456T8RD7Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CometChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
